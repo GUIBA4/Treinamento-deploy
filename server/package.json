@@ -30,7 +30,7 @@
    },
    "scripts": {
       "build": "babel src --extensions \".js,.ts\" --out-dir ./app/dist --copy-files --no-copy-ignored",
-      "start": "yarn build && node dist/index.js",
+      "start": "yarn build && node ./app/dist/index.js",
       "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules src/index.ts",
       "prod": "yarn typeorm migration:run && yarn dev",
       "typeorm": "ts-node node_modules/typeorm/cli.js",
