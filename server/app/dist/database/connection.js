@@ -5,6 +5,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.connection = void 0;
 
+require("reflect-metadata");
+
 var _typeorm = require("typeorm");
 
 var _dotenv = _interopRequireDefault(require("dotenv"));
