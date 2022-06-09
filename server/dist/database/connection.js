@@ -27,8 +27,3 @@ const connection = new _typeorm.DataSource({
   entities: ['src/models/*.ts']
 });
 exports.connection = connection;
-connection.initialize().then(async () => {
-  console.log('📦 Successfully connected with database');
-}).catch(error => {
-  console.log('Error connecting to database', error);
-});

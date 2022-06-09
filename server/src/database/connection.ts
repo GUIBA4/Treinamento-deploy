@@ -18,9 +18,3 @@ export const connection = new DataSource(
   }
 )
 
-connection.initialize().then( async () => {
-  console.log('📦 Successfully connected with database');
-}).catch((error) => {
-  console.log('Error connecting to database', error);
-})
-
