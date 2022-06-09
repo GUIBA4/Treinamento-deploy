@@ -12,6 +12,6 @@ RUN yarn
 
 RUN yarn build
 
-EXPOSE 6812
+EXPOSE 3001
 
-CMD ["node", "client"]
+CMD ["yarn", "start"]
