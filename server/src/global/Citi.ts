@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { DeepPartial, EntityTarget } from 'typeorm';
 import { connection } from 'src/database/connection';
 import Message from "./Message";
@@ -61,7 +62,7 @@ export default class Citi {
             const entityRepository = connection.getRepository(entity);
             const valueFound = await entityRepository.find({
                 where: {
-                    
+                    id: entityID
                 }
             })
 
@@ -106,7 +107,7 @@ export default class Citi {
 
             const valueFound = await entityRepository.find({
                 where: {
-                    
+                    id: entityID
                 }
             })
 
