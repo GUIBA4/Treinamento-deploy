@@ -19,7 +19,8 @@
       "typeorm": "0.3.6"
    },
    "scripts": {
-      "start": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules src/index.ts",
+      "start": "yarn build && ts-node-dev src/server.ts",
+      "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules src/index.ts",
       "typeorm": "ts-node node_modules/typeorm/cli.js",
       "migration": "ts-node ./node_modules/typeorm/cli.js migration:run",
       "generate": "ts-node ./node_modules/.bin/typeorm migration:generate -n",
