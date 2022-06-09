@@ -20,7 +20,7 @@
       "typeorm": "0.3.6"
    },
    "scripts": {
-      "build": "rimraf app/dist && tsc -p tsconfig-build.json",
+      "build": "rimraf dist && tsc -p tsconfig-build.json",
       "start": "yarn build && node dist/index.js",
       "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules src/index.ts",
       "prod": "yarn typeorm migration:run && yarn dev",
