@@ -8,7 +8,5 @@ app.use(express.static(`${baseDir}`));
 
 app.get('*', (req, res) => res.sendFile('index.html', { root: baseDir }));
 
-const port = 3000 || process.env.PORT;
-
 // eslint-disable-next-line no-console
-app.listen(port, () => console.log(`Listening on port ${port}`));
+app.listen(3000 || process.env.PORT, () => console.log(`Listening on port ${3000 || process.env.PORT}`));
