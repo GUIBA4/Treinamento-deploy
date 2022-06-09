@@ -61,7 +61,7 @@ export default class Citi {
             const entityRepository = connection.getRepository(entity);
             const valueFound = await entityRepository.find({
                 where: {
-                    id: entityID
+                    
                 }
             })
 
@@ -106,7 +106,7 @@ export default class Citi {
 
             const valueFound = await entityRepository.find({
                 where: {
-                    id: entityID
+                    
                 }
             })
 

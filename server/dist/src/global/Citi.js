@@ -54,9 +54,7 @@ class Citi {
             const entityID = Number(id);
             const entityRepository = connection_1.connection.getRepository(entity);
             const valueFound = await entityRepository.find({
-                where: {
-                    id: entityID
-                }
+                where: {}
             });
             if (valueFound.length === 0)
                 throw new Error('Nao foi encontrado');
@@ -97,9 +95,7 @@ class Citi {
             const entityID = Number(id);
             const entityRepository = connection_1.connection.getRepository(repositoryType);
             const valueFound = await entityRepository.find({
-                where: {
-                    id: entityID
-                }
+                where: {}
             });
             if (valueFound.length === 0)
                 throw new Error("Não foi encontrado");
