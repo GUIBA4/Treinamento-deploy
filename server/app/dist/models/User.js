@@ -5,6 +5,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.User = void 0;
 
+require("reflect-metadata");
+
 var _typeorm = require("typeorm");
 
 var _dec, _dec2, _dec3, _dec4, _dec5, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4;
