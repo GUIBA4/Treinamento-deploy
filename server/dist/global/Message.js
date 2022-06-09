@@ -1,7 +1,12 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-class Message {
-}
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+class Message {}
+
 exports.default = Message;
 Message.INSERTED_IN_DATABASE = "the value was INSERTED IN THE DATABASE";
 Message.GET_ALL_VALUES_FROM_DATABASE = "get all the values from the database";
