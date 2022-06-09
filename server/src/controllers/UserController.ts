@@ -23,8 +23,7 @@ export default class UserController implements Crud {
 
     async delete(request: Request, response: Response){
         const { id } = request.params;
-        const {value: userFound, message } = await Citi.findByID(User, id); 
-           
+        const {value: userFound, message } = await Citi.findByID(User, id)
         if(!userFound) return response.status(400).send({ message });
 
         const {httpStatus, messageFromDelete } = await Citi.deleteValue(User, userFound);
@@ -43,6 +42,4 @@ export default class UserController implements Crud {
         const { httpStatus, messageFromUpdate } = await Citi.updateValue(User, id, userWithUpdatedValues);
         return response.status(httpStatus).send({ messageFromUpdate });
     }
-
-    
 }
