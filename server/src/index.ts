@@ -1,4 +1,4 @@
-import './database/connection.ts';
+import './database/connection';
 import routes from './routes'
 import dotenv from 'dotenv';
 import express from 'express';

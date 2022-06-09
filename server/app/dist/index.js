@@ -1,6 +1,6 @@
 "use strict";
 
-require("./database/connection.ts");
+require("./database/connection");
 
 var _routes = _interopRequireDefault(require("./routes"));
 
