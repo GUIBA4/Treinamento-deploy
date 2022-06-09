@@ -9,6 +9,6 @@ application.use(cors());
 application.use(express.json());
 application.use(routes);
 
-application.listen(3001, () => {
+application.listen(process.env.PORT || 3001, () => {
     console.log('📦 Server running');
 });
